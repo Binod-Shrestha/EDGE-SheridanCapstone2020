@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+
+.login{
+	border: 1pt solid black;
+	border-radius:5pt;
+	padding:15pt;
+	margin-left:480pt;
+	margin-right:480pt;
+	text-align:center;
+}
+.login_input, .inpt{
+	width:250pt;
+	height:20pt;
+	padding:5pt;
+		font-size:17pt;
+	
+	margin:5pt;
+}
+form{
+	text-align:center;
+	
+}
+label{
+	font-size:17pt;
+	font-weight:bold;
+}
+.login-submit{
+	height:30pt;
+	width:263pt;
+	text-align:center;
+	font-size:17pt;
+	margin-left:77pt;
+	margin-bottom:15pt;
+	transition-duration: 0.4s;
+}
+.login-submit:hover {
+  background-color: #e81385;
+  color: white;
+}
+
+
+
+#register{
+		font-size:20pt;
+		padding-left:80pt;
+		margin-top:10pt;
+		margin-bottom:20pt;	
+}
+.btnAddUser{
+	height:30pt;
+	width:263pt;
+	text-align:center;
+	font-size:17pt;
+	margin-bottom:15pt;
+	transition-duration: 0.4s;
+	
+}
+.btnAddUser:hover {
+  background-color: #e81385;
+  color: white;
+}

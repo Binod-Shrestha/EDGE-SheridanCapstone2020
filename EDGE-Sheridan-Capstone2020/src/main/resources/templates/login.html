@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/master_css.css}">
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/login.css}">
+</head>
+<body>
+<div>
+		<table>
+
+			<tr>
+				<div id="topBanner"></div>
+
+			</tr>
+			<tr>
+				<td><img alt="edge_logo" id="logo" src="./images/edge_sher.png"
+					width="150pt" height="80pt"></td>
+				<td id="title">
+					<h1 id="hdr">Edge Sheridan</h1>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+
+	</div>
+	<ul id="navBar">
+		<li><a href="/" th:href="@{/}" >Home</a></li>
+		<li><a href="/" th:href="@{/}">Events</a></li>
+		
+		<li><a href="/" th:href="@{/}">About Us</a></li>
+		<li><a href="/" th:href="@{/}">Admin</a></li>
+
+	</ul>
+
+	<div class="grid-container">
+		<div class="item1">Welcome to Edge-Sherdan</div>
+	</div>
+	
+	<div class="login">
+	<h1>Login </h1>
+	<form th:action="@{/login}" method="post">
+		<div th:if="${param.error}">
+			<div class="alert">Invalid username or password</div>
+		</div>
+		<div th:if="${param.logout}">
+			<div class="alert">You have been logged out</div>
+		</div>
+
+		<div>
+			<label for="username"> Username: </label> <input type="text" class="login_input"
+				id="username" name="username" autofocus="autofocus"
+				placeholder="Username">
+		</div>
+		<div>
+			<label for="password"> Password: </label> <input type="password"
+				id="password" class="login_input" name="password" placeholder="Password">
+		</div>
+
+		<div>
+			<label for="submit"> </label> <input type="submit"
+				class="login-submit" name="login-submit" placeholder="Login">
+		</div>
+		<br>
+	</form>
+	</div><br><br>
+	
+	
+		
+
+	<div class="item5">
+		<hr>
+		<p>Copyrights &copy;2020 - Binod Shrestha and Brihan Baron</p>
+
+	</div>
+	</div>
+
+	
+</body>
+</html>

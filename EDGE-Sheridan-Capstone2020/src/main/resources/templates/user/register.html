@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/master_css.css}">
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/login.css}">
+</head>
+<body>
+<div>
+		<table>
+
+			<tr>
+				<div id="topBanner"></div>
+
+			</tr>
+			<tr>
+				<td><img alt="edge_logo" id="logo" src="./images/edge_sher.png"
+					width="150pt" height="80pt"></td>
+				<td id="title">
+					<h1 id="hdr">Edge Sheridan</h1>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+
+	</div>
+	<ul id="navBar">
+		<li><a href="/" th:href="@{/}" >Home</a></li>
+		<li><a href="/" th:href="@{/}">Events</a></li>
+		<li><a href="/" class="active" th:href="@{/}">Register</a></li>
+		<li><a href="/" th:href="@{/}">About Us</a></li>
+		<li><a href="/" th:href="@{/}">Admin</a></li>
+
+	</ul>
+
+	<div class="grid-container">
+		
+	</div>
+	
+	<div class="register">
+	<h1>Register </h1>	
+	<form th:action="@{/register}" method="post">	
+	
+			<table id="tbl">
+			<tr>
+					<td><label for="fullname">Full Name</label>:</td>
+					<td><input type="text" id="fullname" class="inpt" name="fullname"
+						autofocus="autofocus" placeholder="Full Name"></td>
+				</tr>
+				<tr>
+					<td><label for="address">Address</label>:</td>
+					<td><input type="text" id="address" class="inpt" name="address"
+						 placeholder="Address"></td>
+				</tr>
+				<tr>
+					<td><label for="institution">Institution</label>:</td>
+					<td><input type="text" id="institution" class="inpt" name="institution"
+						 placeholder="Institution"></td>
+				</tr>
+				<tr>
+					<td><label for="membership">Membership</label>:</td>
+					<td><input type="text" id="institution" class="inpt" name="membership"
+						 placeholder="Membership"></td>
+				</tr>
+				
+				<tr>
+					<td><label for="staus">Status</label>:</td>
+					<td><input type="text" id="status" class="inpt" name="status"
+						 placeholder="Status"></td>
+				</tr>
+				<tr>
+					<td><label for="dob">Date of Birth:</label>:</td>
+					<td><input type="text" id="dob" class="inpt" name="dob"
+						 placeholder="YY/MM/DD"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email:</label>:</td>
+					<td><input type="text" id="email" class="inpt" name="email"
+						 placeholder="abc@example.com"></td>
+				</tr>
+				<tr>
+					<td><label for="phone">Phone:</label>:</td>
+					<td><input type="text" id="phone" class="inpt" name="phone"
+						 placeholder="+x-xxx-xxx-xxx"></td>
+				</tr>
+				
+
+				<tr>
+					<td><label for="username">Username</label>:</td>
+					<td><input type="text" id="username" class="inpt" name="username"
+						 placeholder="Username"></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label>:</td>
+					<td><input type="password" id="password" class="inpt" name="password"
+						placeholder="Password"></td>
+				</tr>
+				<tr>
+				<td></td>
+					<td><input type="submit" class="btnAddUser" name="login-submit"
+						id="add_user" value="Add User"></td>
+												
+				</tr>
+
+			</table>
+
+		</form>	
+	</div><br><br>
+	
+	
+		
+
+	<div class="item5">
+		<hr>
+		<p>Copyrights &copy;2020 - Binod Shrestha and Brihan Baron</p>
+
+	</div>
+	</div>
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
